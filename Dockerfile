@@ -33,6 +33,6 @@ RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "cmdline-tools;lat
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "build-tools;30.0.3"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platform-tools"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platforms;android-30"
-RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "ndk-bundle"
+RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "ndk;21.1.6352462"
 
 CMD /opt/tools/entrypoint.sh built-in
