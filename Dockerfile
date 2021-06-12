@@ -22,6 +22,8 @@ RUN dpkg --add-architecture i386 && \
 
 RUN groupadd android && useradd -d /opt/android-sdk-linux -g android android
 
+RUN pip3 install requests
+
 COPY tools /opt/tools
 COPY licenses /opt/licenses
 
