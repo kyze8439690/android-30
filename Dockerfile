@@ -17,12 +17,10 @@ ENV PATH "${PATH}:${ANDROID_HOME}/bin"
 
 RUN dpkg --add-architecture i386 && \
     apt-get update -yqq && \
-    apt-get install -y curl expect git libc6:i386 libgcc1:i386 libncurses5:i386 libstdc++6:i386 zlib1g:i386 openjdk-11-jdk python3 wget unzip vim && \
+    apt-get install -y curl expect git libc6:i386 libgcc1:i386 libncurses5:i386 libstdc++6:i386 zlib1g:i386 openjdk-11-jdk python3 python3-pip wget unzip vim && \
     apt-get clean
 
 RUN groupadd android && useradd -d /opt/android-sdk-linux -g android android
-
-RUN easy_install pip
 
 COPY tools /opt/tools
 COPY licenses /opt/licenses
