@@ -2,7 +2,7 @@
 
 Docker for Android SDK 30 with preinstalled build tools and emulator image
 
-> Edit from [mindrunner/docker-android-sdk](https://github.com/mindrunner/docker-android-sdk)
+> Edit from [docker-android-sdk/android-30](https://github.com/docker-android-sdk/android-30)
 
 **Installed Packages**
 ```bash
