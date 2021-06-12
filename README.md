@@ -20,6 +20,14 @@ Docker for Android SDK 30 with preinstalled build tools and emulator image
 
 **Usage**
 
+- Interactive way
+  ```bash
+  $ docker run -it --rm --privileged androidsdk/android-30:latest bash
+  # check installed packages
+  $ sdkmanager --list
+  # You can also run other Android platform tools, which are all added to the PATH environment variable
+  ```
+
 - Non-interactive way
   ```bash
   # check installed packages
